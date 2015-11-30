@@ -7,18 +7,22 @@ import time
 browser = webdriver.Firefox()
 
 '''Load page :  yahoo'''
-browser.get("http://www.yahoo.com")
+# browser.get("http://www.yahoo.com")
+browser.get("http://international.o2.co.uk/internationaltariffs/calling_abroad_from_uk")
 
 '''error check'''
-assert "Yahoo" in browser.title
+# assert "Yahoo" in browser.title
+assert "o2" in browser.title
 
 '''interacting with the page'''
 
 '''find query box'''
-elem = browser.find_element_by_name("p")
+# elem = browser.find_element_by_name("p")
+elem = browser.find_element_by_id("countryName") # Find the query box
 
 '''mimic keystroke interaction with page :input query string and hit return'''
-elem.send_keys("seleniumhq" + Keys.RETURN)
+# elem.send_keys("seleniumhq" + Keys.RETURN)
+elem.send_keys("Canada" + Keys.RETURN)
 
 
 
