@@ -12,7 +12,7 @@ browser.get("http://international.o2.co.uk/internationaltariffs/calling_abroad_f
 
 '''error check'''
 # assert "Yahoo" in browser.title
-assert "o2" in browser.title
+# assert "o2" in browser.title
 
 '''interacting with the page'''
 
