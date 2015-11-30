@@ -31,10 +31,10 @@ time.sleep(0.2)
 
 
 
-'''error catching'''
-try:
-    browser.find_element_by_xpath("//a[contains(@href,'http://seleniumhq.org')]")
-except NoSuchElementException:
-    assert 0, "can't find seleniumhq"
+# '''error catching'''
+# try:
+#     browser.find_element_by_xpath("//a[contains(@href,'http://seleniumhq.org')]")
+# except NoSuchElementException:
+#     assert 0, "can't find seleniumhq"
 browser.close()
 
